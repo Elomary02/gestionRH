@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" styleClass="notifications_container"
+            stylesheets="@../../Style/UserNotifications.css" xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.gestionrh.Controller.User.UserNotificationsController">
+   <Text layoutX="273.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notifications"/>
+   <ListView fx:id="notifications_lv" layoutX="6.0" layoutY="41.0" prefHeight="451.0" prefWidth="686.0"/>
+</AnchorPane>

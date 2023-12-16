@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
+      prefWidth="160.0" style="-fx-border-radius: 50%;" xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestionrh.Controller.Admin.AdminMenuController">
+    <AnchorPane prefHeight="460.0" prefWidth="160.0">
+        <VBox prefHeight="80.0" prefWidth="160.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="0.0">
+            <FontAwesomeIconView glyphName="USERS" size="30">
+                <VBox.margin>
+                    <Insets left="55.0" top="10.0"/>
+                </VBox.margin>
+            </FontAwesomeIconView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.1em;" text="HR MANAGER">
+                <VBox.margin>
+                    <Insets left="35.0" top="20.0"/>
+                </VBox.margin>
+            </Text>
+        </VBox>
+        <AnchorPane layoutY="125.0" prefHeight="328.0" prefWidth="160.0" AnchorPane.topAnchor="100.0">
+            <Button fx:id="btn_addEmploye" layoutX="4.0" layoutY="14.0" mnemonicParsing="false"
+                    style="-fx-background-color: #123A13;" text="Ajouter un employé" textFill="#f8f6f6"
+                    AnchorPane.leftAnchor="4.0">
+                <graphic>
+                    <FontAwesomeIconView fill="#fbf7f7" glyphName="PLUS" selectionFill="#eeeeee" size="20"/>
+                </graphic>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Button>
+            <Button fx:id="btn_showListEmploye" layoutX="7.0" layoutY="73.0" mnemonicParsing="false"
+                    prefHeight="28.0" prefWidth="141.0" style="-fx-background-color: #132A13;"
+                    text="List des employés" textFill="#f6f2f2" AnchorPane.leftAnchor="4.0">
+                <graphic>
+                    <FontAwesomeIconView fill="#f8f6f6" glyphName="LIST" size="20"/>
+                </graphic>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Button>
+            <Button fx:id="bnt_logout" layoutX="30.0" layoutY="235.0" mnemonicParsing="false"
+                    style="-fx-background-color: #132A13;" text="Se déconnecter" textFill="#fdfafa">
+                <graphic>
+                    <FontAwesomeIconView fill="#f6f4f4" glyphName="EXTERNAL_LINK" size="20"/>
+                </graphic>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Button>
+            <Button fx:id="btn_notification" layoutX="21.0" layoutY="126.0" mnemonicParsing="false"
+                    style="-fx-background-color: #132A13;" text="Notifications" textFill="#fbf9f9"
+                    AnchorPane.leftAnchor="4.0">
+                <graphic>
+                    <FontAwesomeIconView fill="#f6f5f5" glyphName="BELL" size="20"/>
+                </graphic>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Button>
+            <Line endX="52.0" layoutX="94.0" layoutY="172.0" startX="-83.9999771118164"/>
+        </AnchorPane>
+    </AnchorPane>
+    <VBox prefHeight="97.0" prefWidth="160.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Help?">
+            <VBox.margin>
+                <Insets left="50.0" right="10.0" top="10.0"/>
+            </VBox.margin>
+        </Text>
+        <Button fx:id="btn_report" mnemonicParsing="false" style="-fx-background-color: #132A13;" text="Report!"
+                textFill="#f6f4f4">
+            <graphic>
+                <FontAwesomeIconView fill="#f6f2f2" glyphName="PLUS" size="20"/>
+            </graphic>
+            <VBox.margin>
+                <Insets bottom="10.0" left="35.0" right="10.0" top="10.0"/>
+            </VBox.margin>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+    </VBox>
+</VBox>

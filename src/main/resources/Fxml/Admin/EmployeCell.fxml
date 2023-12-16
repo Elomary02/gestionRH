@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<AnchorPane prefHeight="55.0" prefWidth="550.0" styleClass="employee_cell_container"
+            stylesheets="@../../Style/EmployeCell.css" xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestionrh.Controller.Admin.EmployeCellController">
+   <FontAwesomeIconView glyphName="USER" layoutX="14.0" layoutY="32.0" size="25" AnchorPane.leftAnchor="14.0"
+                        AnchorPane.topAnchor="14.0"/>
+   <HBox layoutX="48.0" layoutY="5.0" prefHeight="45.0" prefWidth="393.0" AnchorPane.leftAnchor="48.0"
+         AnchorPane.topAnchor="5.0">
+      <Label fx:id="emplye_id" styleClass="acc_display_lbl" text="1"/>
+      <Label fx:id="employe_fname" styleClass="acc_display_lbl" text="elhoucine"/>
+      <Label fx:id="employe_lname" styleClass="acc_display_lbl" text="elomary"/>
+      <Label fx:id="employe_post" styleClass="acc_display_lbl" text="TECHNICIEN"/>
+      <Label fx:id="employe_salary" styleClass="acc_display_lbl" text="5000.00"/>
+   </HBox>
+   <Button fx:id="btn_deleteEmplyee" layoutX="453.0" layoutY="15.0" mnemonicParsing="false" styleClass="delete_btn"
+           text="Supprimer">
+      <graphic>
+         <FontAwesomeIconView glyphName="WINDOW_CLOSE_ALT" size="15"/>
+      </graphic>
+   </Button>
+</AnchorPane>

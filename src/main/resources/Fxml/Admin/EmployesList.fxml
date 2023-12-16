@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" styleClass="employees_container"
+            stylesheets="@../../Style/EmployesList.css" xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.gestionrh.Controller.Admin.EmployesListController">
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des employés:" AnchorPane.leftAnchor="14.0"
+         AnchorPane.topAnchor="14.0"/>
+   <ListView fx:id="lv_list_employes" layoutX="14.0" layoutY="37.0" prefHeight="436.0" prefWidth="672.0"
+             AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="50.0">
+      <fx:include source="EmployeCell.fxml"/>
+   </ListView>
+</AnchorPane>
